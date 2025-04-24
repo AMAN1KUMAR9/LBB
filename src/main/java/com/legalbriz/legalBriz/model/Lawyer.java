@@ -11,7 +11,7 @@ public class Lawyer {
 
     private String name;
     private String specialty;
-    private float rating;
+    private double rating;
     private String experience;
     private String location;
     private String languages;
@@ -24,18 +24,18 @@ public class Lawyer {
     }
 
     // Parameterized constructor (optional)
-    public Lawyer(Long id, String name, String specialty, float rating, String experience,
-                  String location, String languages, String fee, String availability, String bio) {
+    public Lawyer(Long id, String availability, String bio, String experience, String fees, String languages,
+                  String location, String name, double rating, String specialization) {
         this.id = id;
-        this.name = name;
-        this.specialty = specialty;
-        this.rating = rating;
-        this.experience = experience;
-        this.location = location;
-        this.languages = languages;
-        this.fee = fee;
         this.availability = availability;
         this.bio = bio;
+        this.experience = experience;
+        this.fee = fees;
+        this.languages = languages;
+        this.location = location;
+        this.name = name;
+        this.rating = rating;
+        this.specialty = specialization;
     }
 
     // Getters and Setters
@@ -63,7 +63,7 @@ public class Lawyer {
         this.specialty = specialty;
     }
 
-    public float getRating() {
+    public double getRating() {
         return rating;
     }
 

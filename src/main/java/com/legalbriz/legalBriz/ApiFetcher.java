@@ -8,7 +8,7 @@ import java.net.URL;
 public class ApiFetcher {
     public static void main(String[] args) {
         try {
-            URL url = new URL("http://localhost:8080/hey"); // Replace with your API URL
+            URL url = new URL("https://illustrious-encouragement-production.up.railway.app/hey"); // Replace with your API URL
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
 
